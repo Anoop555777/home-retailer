@@ -76,10 +76,35 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
-.side-bar {
+.sidebar {
   background-color: #c69963;
   grid-row: 1/-1;
-  grid-column: sidebar-start/sidebar-end; }
+  grid-column: sidebar-start/sidebar-end;
+  display: flex;
+  justify-content: center; }
+
+.nav-btn {
+  margin-top: 2.4rem;
+  border: none;
+  background-color: #fff;
+  height: 2px;
+  width: 4.8rem;
+  position: relative;
+  transition: all 0.2s;
+  cursor: pointer; }
+  .nav-btn::before, .nav-btn::after {
+    content: "";
+    border: none;
+    background-color: #fff;
+    height: 2px;
+    width: 4.8rem;
+    position: absolute;
+    display: block;
+    left: 0; }
+  .nav-btn::before {
+    top: -1rem; }
+  .nav-btn::after {
+    top: 1rem; }
 
 .header {
   background-color: #54483a;
