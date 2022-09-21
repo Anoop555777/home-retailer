@@ -5,6 +5,14 @@
 
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 62.5em) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
 }
 
 .nav-btn {

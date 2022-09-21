@@ -5,18 +5,32 @@
   justify-content: center;
   align-content: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1/-1;
+    padding: 3.2rem 0;
+  }
+
   &__list {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: min-content max-content;
     align-items: center;
 
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: min-content max-content;
+    }
+
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
   }
 
   &__img {
-    width: 7rem;
+    max-width: 7rem;
+    max-height: 7rem;
     border-radius: 50%;
     display: block;
   }
